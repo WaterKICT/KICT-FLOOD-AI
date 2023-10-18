@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/waterlevel_prediction" >
-        <file>icon.png</file>
-    </qresource>
-</RCC>
