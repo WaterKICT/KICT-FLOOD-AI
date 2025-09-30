@@ -1,0 +1,2599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="font">
+   <font>
+    <family>돋움</family>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>KICT-FLOOD-AI Dashboard</string>
+  </property>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>1841</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Model</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtBox_modelName">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>35</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>돋움</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>40</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Year</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cb_year">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>35</y>
+     <width>120</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>돋움</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cb_riverRegion">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>35</y>
+     <width>180</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>돋움</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>40</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>River Region</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cb_targetPoint">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>35</y>
+     <width>180</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>돋움</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>40</y>
+     <width>110</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Target Point</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_exportReport">
+   <property name="geometry">
+    <rect>
+     <x>1710</x>
+     <y>30</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Export Report</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tbl_targetInfo">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>1041</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>돋움</family>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="autoScroll">
+    <bool>false</bool>
+   </property>
+   <property name="sortingEnabled">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>148</number>
+   </attribute>
+   <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Beginning</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Hydro Model</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Rating curve</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Basic Model</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Predict Rainfall Model</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Scenario Model</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>134</y>
+     <width>771</width>
+     <height>180</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="vl_targetDataGraph"/>
+  </widget>
+  <widget class="QTableWidget" name="tbl_referenceInfo">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>220</y>
+     <width>1041</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>돋움</family>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="sortingEnabled">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>144</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>No.</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Type</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Code</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Beginning</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>New Column</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Hydro Model</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>View</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>350</y>
+     <width>771</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="vl_referenceDataGraph"/>
+  </widget>
+  <widget class="QTabWidget" name="tab_models">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>540</y>
+     <width>1831</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_basicModel">
+    <attribute name="title">
+     <string>Basic Model</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>551</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Validation</string>
+     </property>
+     <widget class="QTableWidget" name="tbl_basicValidation">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>531</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string>10min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>20min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>30min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>40min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>50min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>60min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>80min</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="btn_basicValidation_prev">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>122</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_basicValidation_next">
+      <property name="geometry">
+       <rect>
+        <x>159</x>
+        <y>122</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>158</y>
+        <width>531</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="vl_basicValidation"/>
+     </widget>
+     <widget class="QPushButton" name="btn_basic_saveGraphValidation">
+      <property name="geometry">
+       <rect>
+        <x>195</x>
+        <y>122</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Save Graph</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_basicValidation">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>122</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="maxCount">
+       <number>36</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+      </property>
+      <property name="minimumContentsLength">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_basicValidation">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>-3</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>View File Info</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>1190</x>
+       <y>30</y>
+       <width>601</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Performance Check</string>
+     </property>
+     <widget class="QPushButton" name="btn_basic_pc_time_prev">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>79</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_basic_pc_time_next">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>79</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>118</y>
+        <width>581</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="vl_basicPerformanceCheck"/>
+     </widget>
+     <widget class="QPushButton" name="btn_basic_saveGraphPC">
+      <property name="geometry">
+       <rect>
+        <x>252</x>
+        <y>79</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Save Graph</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>40</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start Time</string>
+      </property>
+     </widget>
+     <widget class="QDateTimeEdit" name="dt_basic_pc_startTime">
+      <property name="geometry">
+       <rect>
+        <x>98</x>
+        <y>33</y>
+        <width>170</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd hh:mm</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QDateTimeEdit" name="dt_basic_pc_endTime">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>33</y>
+        <width>170</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd hh:mm</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>40</y>
+        <width>73</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>End Time</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>364</x>
+        <y>86</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Interval</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_basic_pd_interval1">
+      <property name="geometry">
+       <rect>
+        <x>433</x>
+        <y>85</y>
+        <width>55</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>0.5</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_basic_pd_interval2">
+      <property name="geometry">
+       <rect>
+        <x>497</x>
+        <y>85</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_basic_pd_interval3">
+      <property name="geometry">
+       <rect>
+        <x>547</x>
+        <y>85</y>
+        <width>40</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_basic_pc_time">
+      <property name="geometry">
+       <rect>
+        <x>46</x>
+        <y>79</y>
+        <width>170</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="maxCount">
+       <number>999999</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+      </property>
+      <property name="minimumContentsLength">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_basic_pc_search">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>31</y>
+        <width>51</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>30</y>
+       <width>551</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Inference</string>
+     </property>
+     <widget class="QTableWidget" name="tbl_basicInference">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>531</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string>10min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>20min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>30min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>40min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>50min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>60min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>80min</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="btn_basicInference_prev">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>122</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_basicInference_next">
+      <property name="geometry">
+       <rect>
+        <x>159</x>
+        <y>122</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>158</y>
+        <width>531</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="vl_basicInference"/>
+     </widget>
+     <widget class="QPushButton" name="btn_basic_saveGraphInference">
+      <property name="geometry">
+       <rect>
+        <x>195</x>
+        <y>122</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Save Graph</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_basicInference">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>122</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="maxCount">
+       <number>36</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_basicInference">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>-3</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>View File Info</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="lbl_basicPerformanceCheck">
+     <property name="geometry">
+      <rect>
+       <x>1647</x>
+       <y>27</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>View File Info</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_predModel">
+    <attribute name="title">
+     <string>Predict Rainfall Model</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>30</y>
+       <width>551</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Inference</string>
+     </property>
+     <widget class="QTableWidget" name="tbl_predInference">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>531</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string>10min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>20min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>30min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>40min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>50min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>60min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>80min</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="btn_predRfInference_prev">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>122</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_predRfInference_next">
+      <property name="geometry">
+       <rect>
+        <x>159</x>
+        <y>122</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>158</y>
+        <width>531</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="vl_predInference"/>
+     </widget>
+     <widget class="QPushButton" name="btn_rf_saveGraphInference">
+      <property name="geometry">
+       <rect>
+        <x>195</x>
+        <y>122</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Save Graph</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_predInference_realtime">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>128</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Realtime_Predict_RF</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_predInference_origin">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>129</y>
+        <width>91</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Predict_RF</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_predRfInference">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>122</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="maxCount">
+       <number>36</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+      </property>
+      <property name="minimumContentsLength">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_predInference">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>-3</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>View File Info</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="geometry">
+      <rect>
+       <x>1190</x>
+       <y>30</y>
+       <width>601</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Performance Check</string>
+     </property>
+     <widget class="QPushButton" name="btn_predRf_pc_time_prev">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>79</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_predRf_pc_time_next">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>79</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>118</y>
+        <width>581</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="vl_predPerformanceCheck"/>
+     </widget>
+     <widget class="QPushButton" name="btn_rf_saveGraphPC">
+      <property name="geometry">
+       <rect>
+        <x>252</x>
+        <y>79</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Save Graph</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>40</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start Time</string>
+      </property>
+     </widget>
+     <widget class="QDateTimeEdit" name="dt_predRf_pc_startTime">
+      <property name="geometry">
+       <rect>
+        <x>98</x>
+        <y>33</y>
+        <width>170</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd hh:mm</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QDateTimeEdit" name="dt_predRf_pc_endTime">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>33</y>
+        <width>170</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd hh:mm</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>40</y>
+        <width>73</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>End Time</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>364</x>
+        <y>86</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Interval</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_predRf_pd_interval1">
+      <property name="geometry">
+       <rect>
+        <x>433</x>
+        <y>85</y>
+        <width>55</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>0.5</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_predRf_pd_interval2">
+      <property name="geometry">
+       <rect>
+        <x>497</x>
+        <y>85</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_predRf_pd_interval3">
+      <property name="geometry">
+       <rect>
+        <x>547</x>
+        <y>85</y>
+        <width>40</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_predRf_pc_time">
+      <property name="geometry">
+       <rect>
+        <x>46</x>
+        <y>79</y>
+        <width>170</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="maxCount">
+       <number>36</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+      </property>
+      <property name="minimumContentsLength">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_predRf_pc_search">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>31</y>
+        <width>51</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_predPerformanceCheck">
+      <property name="geometry">
+       <rect>
+        <x>457</x>
+        <y>-3</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>View File Info</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_9">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>551</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Validation</string>
+     </property>
+     <widget class="QTableWidget" name="tbl_predValidation">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>531</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string>10min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>20min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>30min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>40min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>50min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>60min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>80min</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="btn_predRfValidation_prev">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>122</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_predRfValidation_next">
+      <property name="geometry">
+       <rect>
+        <x>159</x>
+        <y>122</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>158</y>
+        <width>531</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="vl_predValidation"/>
+     </widget>
+     <widget class="QPushButton" name="btn_rf_saveGraphValidation">
+      <property name="geometry">
+       <rect>
+        <x>195</x>
+        <y>122</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Save Graph</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_predValidation_origin">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>129</y>
+        <width>90</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Predict_RF</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_predValidation_realtime">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>128</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Realtime_Predict_RF</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_predRfValidation">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>122</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="maxCount">
+       <number>36</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+      </property>
+      <property name="minimumContentsLength">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_predValidation">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>-3</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>View File Info</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_scenarioModel">
+    <attribute name="title">
+     <string>Scenario Model</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>551</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Validation</string>
+     </property>
+     <widget class="QTableWidget" name="tbl_sceValidation">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>531</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string>10min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>20min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>30min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>40min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>50min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>60min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>80min</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="btn_sceValidation_prev">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>122</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_sceValidation_next">
+      <property name="geometry">
+       <rect>
+        <x>159</x>
+        <y>122</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>158</y>
+        <width>531</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="vl_sceValidation"/>
+     </widget>
+     <widget class="QPushButton" name="btn_sce_saveGraphValidation">
+      <property name="geometry">
+       <rect>
+        <x>195</x>
+        <y>122</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Save Graph</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_sceValidation">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>122</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="maxCount">
+       <number>36</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+      </property>
+      <property name="minimumContentsLength">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_sceValidation">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>-3</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>View File Info</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>30</y>
+       <width>551</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Inference</string>
+     </property>
+     <widget class="QTableWidget" name="tbl_sceInference">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>531</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string>10min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>20min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>30min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>40min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>50min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>60min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>80min</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="btn_sceInference_prev">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>122</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_sceInference_next">
+      <property name="geometry">
+       <rect>
+        <x>159</x>
+        <y>122</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>158</y>
+        <width>531</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="vl_sceInference"/>
+     </widget>
+     <widget class="QPushButton" name="btn_sce_saveGraphInference">
+      <property name="geometry">
+       <rect>
+        <x>195</x>
+        <y>122</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Save Graph</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_sceInference">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>122</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="maxCount">
+       <number>36</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+      </property>
+      <property name="minimumContentsLength">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_sceInference">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>-3</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>View File Info</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>1190</x>
+       <y>30</y>
+       <width>601</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Performance Check</string>
+     </property>
+     <widget class="QPushButton" name="btn_sce_pc_time_prev">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>79</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_sce_pc_time_next">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>79</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>118</y>
+        <width>581</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="vl_scePerformanceCheck"/>
+     </widget>
+     <widget class="QPushButton" name="btn_sce_saveGraphPC">
+      <property name="geometry">
+       <rect>
+        <x>252</x>
+        <y>79</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Save Graph</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>364</x>
+        <y>86</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Interval</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_sce_pd_interval1">
+      <property name="geometry">
+       <rect>
+        <x>433</x>
+        <y>85</y>
+        <width>55</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>0.5</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_sce_pd_interval2">
+      <property name="geometry">
+       <rect>
+        <x>497</x>
+        <y>85</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb_sce_pd_interval3">
+      <property name="geometry">
+       <rect>
+        <x>547</x>
+        <y>85</y>
+        <width>40</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_sce_pc_time">
+      <property name="geometry">
+       <rect>
+        <x>46</x>
+        <y>79</y>
+        <width>170</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="maxCount">
+       <number>36</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+      </property>
+      <property name="minimumContentsLength">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QDateTimeEdit" name="dt_sce_pc_endTime">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>33</y>
+        <width>170</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd hh:mm</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_sce_pc_search">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>31</y>
+        <width>51</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>40</y>
+        <width>73</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>End Time</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>40</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start Time</string>
+      </property>
+     </widget>
+     <widget class="QDateTimeEdit" name="dt_sce_pc_startTime">
+      <property name="geometry">
+       <rect>
+        <x>98</x>
+        <y>33</y>
+        <width>170</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>돋움</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd hh:mm</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_scePerformanceCheck">
+      <property name="geometry">
+       <rect>
+        <x>457</x>
+        <y>-3</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>View File Info</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>110</y>
+     <width>381</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Target Point - Training Data Graph</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>53</x>
+     <y>190</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reference Point</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>324</y>
+     <width>761</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reference Point - Training Data Graph</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>171</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>돋움</family>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>● : Representative Model</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_targetPointFile">
+   <property name="geometry">
+    <rect>
+     <x>1748</x>
+     <y>108</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>View File Info</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_refPointFile">
+   <property name="geometry">
+    <rect>
+     <x>1748</x>
+     <y>322</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>View File Info</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtBox_modelName</tabstop>
+  <tabstop>cb_year</tabstop>
+  <tabstop>cb_riverRegion</tabstop>
+  <tabstop>cb_targetPoint</tabstop>
+  <tabstop>tbl_targetInfo</tabstop>
+  <tabstop>tbl_referenceInfo</tabstop>
+  <tabstop>tab_models</tabstop>
+  <tabstop>tbl_basicValidation</tabstop>
+  <tabstop>btn_basicValidation_prev</tabstop>
+  <tabstop>btn_basicValidation_next</tabstop>
+  <tabstop>cb_basicValidation</tabstop>
+  <tabstop>tbl_basicInference</tabstop>
+  <tabstop>btn_basicInference_prev</tabstop>
+  <tabstop>btn_basicInference_next</tabstop>
+  <tabstop>cb_basicInference</tabstop>
+  <tabstop>dt_basic_pc_startTime</tabstop>
+  <tabstop>dt_basic_pc_endTime</tabstop>
+  <tabstop>btn_basic_pc_search</tabstop>
+  <tabstop>btn_basic_pc_time_prev</tabstop>
+  <tabstop>btn_basic_pc_time_next</tabstop>
+  <tabstop>cb_basic_pc_time</tabstop>
+  <tabstop>rb_basic_pd_interval1</tabstop>
+  <tabstop>rb_basic_pd_interval2</tabstop>
+  <tabstop>rb_basic_pd_interval3</tabstop>
+  <tabstop>btn_basic_saveGraphValidation</tabstop>
+  <tabstop>btn_basic_saveGraphInference</tabstop>
+  <tabstop>btn_basic_saveGraphPC</tabstop>
+  <tabstop>tbl_predValidation</tabstop>
+  <tabstop>btn_predRfValidation_prev</tabstop>
+  <tabstop>btn_predRfValidation_next</tabstop>
+  <tabstop>cb_predRfValidation</tabstop>
+  <tabstop>rb_predValidation_origin</tabstop>
+  <tabstop>rb_predValidation_realtime</tabstop>
+  <tabstop>tbl_predInference</tabstop>
+  <tabstop>btn_predRfInference_prev</tabstop>
+  <tabstop>btn_predRfInference_next</tabstop>
+  <tabstop>cb_predRfInference</tabstop>
+  <tabstop>rb_predInference_origin</tabstop>
+  <tabstop>rb_predInference_realtime</tabstop>
+  <tabstop>dt_predRf_pc_startTime</tabstop>
+  <tabstop>dt_predRf_pc_endTime</tabstop>
+  <tabstop>btn_predRf_pc_search</tabstop>
+  <tabstop>btn_predRf_pc_time_prev</tabstop>
+  <tabstop>btn_predRf_pc_time_next</tabstop>
+  <tabstop>cb_predRf_pc_time</tabstop>
+  <tabstop>rb_predRf_pd_interval1</tabstop>
+  <tabstop>rb_predRf_pd_interval2</tabstop>
+  <tabstop>rb_predRf_pd_interval3</tabstop>
+  <tabstop>btn_rf_saveGraphValidation</tabstop>
+  <tabstop>btn_rf_saveGraphInference</tabstop>
+  <tabstop>btn_rf_saveGraphPC</tabstop>
+  <tabstop>tbl_sceValidation</tabstop>
+  <tabstop>btn_sceValidation_prev</tabstop>
+  <tabstop>btn_sceValidation_next</tabstop>
+  <tabstop>cb_sceValidation</tabstop>
+  <tabstop>tbl_sceInference</tabstop>
+  <tabstop>btn_sceInference_prev</tabstop>
+  <tabstop>btn_sceInference_next</tabstop>
+  <tabstop>cb_sceInference</tabstop>
+  <tabstop>dt_sce_pc_startTime</tabstop>
+  <tabstop>dt_sce_pc_endTime</tabstop>
+  <tabstop>btn_sce_pc_search</tabstop>
+  <tabstop>btn_sce_pc_time_prev</tabstop>
+  <tabstop>btn_sce_pc_time_next</tabstop>
+  <tabstop>cb_sce_pc_time</tabstop>
+  <tabstop>rb_sce_pd_interval1</tabstop>
+  <tabstop>rb_sce_pd_interval2</tabstop>
+  <tabstop>rb_sce_pd_interval3</tabstop>
+  <tabstop>btn_sce_saveGraphValidation</tabstop>
+  <tabstop>btn_sce_saveGraphInference</tabstop>
+  <tabstop>btn_sce_saveGraphPC</tabstop>
+  <tabstop>btn_exportReport</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
